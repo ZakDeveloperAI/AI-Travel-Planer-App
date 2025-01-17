@@ -15,11 +15,11 @@ export default function Login() {
             <View style={styles.container}>
                 <Text
                     style={{
-                        fontSize: 28,
+                        fontSize: 30,
                         fontFamily: 'outfit-bold',
                         textAlign: "center",
                     }}
-                >AI TRAVEL PLANNER 31:47</Text>
+                >AI TRAVEL PLANNER 36:20</Text>
 
                 <Text
                 style={{
@@ -27,11 +27,23 @@ export default function Login() {
                     fontSize:17,
                     textAlign:"center",
                     color:Colors.GRAY,
+                    marginTop:20
                 }}
                 >Discover your next adventure
                     effortlessly. Personalized
                     itineraries at your fingertips. Travel
                     smarter with Al-driven insights."</Text>
+                <View style={styles.button}>
+                    <Text
+                    style={{
+                        color:Colors.WHITE,
+                        textAlign:"center",
+                        fontFamily:"outfit",
+                        fontSize:17,
+                        
+                    }}
+                    >Sign In With Google</Text>
+                </View>
             </View>
         </View>
     );
@@ -44,6 +56,12 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         height: '100%',
-        padding: 15,
+        padding: 25,
+    },
+    button:{
+        padding:15,
+        backgroundColor:Colors.PRIMARY,
+        borderRadius:99,
+        marginTop:'10%',
     }
 })
