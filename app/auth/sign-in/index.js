@@ -24,7 +24,7 @@ export default function SignIn() {
       try {
         const user = await AsyncStorage.getItem('user');
         if (user) {
-          router.replace('/home'); // Navigate to your home screen
+          router.replace('/mytrip'); // Navigate to your home screen
         }
       } catch (error) {
         console.log('Error retrieving session:', error);
