@@ -4,10 +4,15 @@ import Login from './../components/Login';
 import { auth } from "@/configs/FirebaseConfig";
 import { Redirect } from "expo-router";
 import { User } from "firebase/auth";
+import 'react-native-get-random-values';
+
+
 
 export default function Index() {
   const [user, setUser] = useState<User | null>(null); // Stato per l'utente
   const [loading, setLoading] = useState<boolean>(true); // Stato per il caricamento
+
+
 
   useEffect(() => {
     // Verifica lo stato dell'utente quando il componente si monta
